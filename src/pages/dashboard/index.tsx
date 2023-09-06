@@ -153,13 +153,7 @@ export default function Dashboard({ user }: HomeProps) {
 
                             <div className={styles.taskContent}>
 
-                                {item.public ? (
-                                    <Link href={`/task/${item.id}`}>
-                                        <p>{item.tarefa}</p>
-                                    </Link>
-                                ) : (
-                                    <p>{item.tarefa}</p>
-                                )}
+                                <p>{item.tarefa}</p>
 
                                 <button className={styles.trashButton} onClick={() => handleDeleteTask(item.id)}>
                                     <FaTrash
@@ -168,6 +162,17 @@ export default function Dashboard({ user }: HomeProps) {
                                     />
                                 </button>
                             </div>
+
+                            {item.public && (
+                                <div className={styles.seeMoreContainer}>
+                                    <Link href={`/task/${item.id}`}>
+                                        <button>
+                                            Ver Detalhes
+                                        </button>
+                                    </Link>
+                                </div>
+                            )}
+
 
                         </article>
                     ))}

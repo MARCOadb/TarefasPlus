@@ -20,6 +20,10 @@
     text-decoration: none;
 }
 
+.userName {
+    color: #FFF;
+}
+
 .logo {
     color: #fff;
     font-size: 32px;
@@ -41,7 +45,7 @@
 }
 
 .loginButton:hover {
-    transform: scale(1.08);
+    transform: scale(1.04);
     background-color: #fff;
     color: #0f0f0f;
     font-weight: 700;

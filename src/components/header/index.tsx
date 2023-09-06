@@ -10,7 +10,7 @@ export function Header() {
         <header className={styles.header}>
             <section className={styles.content}>
                 <nav className={styles.nav}>
-                    <Link href='/'>
+                    <Link href='/TarefasPlus'>
                         <h1 className={styles.logo}>
                             Tarefas<span>+</span>
                         </h1>
@@ -23,11 +23,13 @@ export function Header() {
                     )}
                 </nav>
 
+                <span className={styles.userName}>Olá, {session?.user?.name}</span>
+
                 {status === 'loading' ? (
                     <></>
                 ) : session ? (
                     <button className={styles.loginButton} onClick={() => signOut()}>
-                        Olá, {session?.user?.name}
+                        Logout
                     </button>
                 ) : (
                     <button className={styles.loginButton} onClick={() => signIn('google')}>

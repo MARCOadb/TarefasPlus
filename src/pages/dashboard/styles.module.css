@@ -122,3 +122,24 @@
     border: 0;
     margin: 0 8px;
 }
+
+.seeMoreContainer {
+    margin: 16px 0 0 auto;
+}
+
+.seeMoreContainer button {
+    background-color: #3183ff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.seeMoreContainer button:hover {
+    background-color: #306ecc;
+}
