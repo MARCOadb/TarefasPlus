@@ -10,7 +10,7 @@ export function Header() {
         <header className={styles.header}>
             <section className={styles.content}>
                 <nav className={styles.nav}>
-                    <Link href='/TarefasPlus'>
+                    <Link href='/'>
                         <h1 className={styles.logo}>
                             Tarefas<span>+</span>
                         </h1>
