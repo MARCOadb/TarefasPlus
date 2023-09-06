@@ -23,7 +23,10 @@ export function Header() {
                     )}
                 </nav>
 
-                <span className={styles.userName}>Olá, {session?.user?.name}</span>
+                {session && (
+                    <span className={styles.userName}>Olá, {session?.user?.name}</span>
+                )}
+
 
                 {status === 'loading' ? (
                     <></>
