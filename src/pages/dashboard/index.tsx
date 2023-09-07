@@ -188,7 +188,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req }) => {
     if (!session?.user) {
         return {
             redirect: {
-                destination: '/Movies',
+                destination: '/',
                 permanent: false
             }
         }
